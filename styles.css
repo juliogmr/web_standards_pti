@@ -1,0 +1,244 @@
+/* Reset básico para remover margens e padding padrões */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos para o banner principal */
+.hero-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('nome-da-imagem.png'); /* Atualize com o nome real da imagem */
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+}
+
+.hero-text {
+  text-align: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.5); /* Sobreposição escura para melhorar a legibilidade do texto */
+  padding: 2rem;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+button {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  color: white;
+  background-color: #4CAF50; /* Verde */
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Estilos para a seção Sobre */
+.sobre-section {
+  background-color: #f8f8f8; /* Cor de fundo suave */
+  padding: 4rem 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  /* padding: 0 2rem; */
+  padding-top: 6rem;
+}
+
+.sobre-content {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.sobre-img {
+  max-width: 50%;
+  border-radius: 50%;
+}
+
+.sobre-text {
+  max-width: 50%;
+  text-align: justify;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Estilos responsivos para telas menores */
+@media (max-width: 768px) {
+  .hero-banner {
+    height: 60vh;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .sobre-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .sobre-img,
+  .sobre-text {
+    max-width: 100%;
+  }
+
+  .sobre-img {
+    margin: 0 auto; /* Centraliza a imagem */
+  }
+}
+
+/* Estilos para a seção Serviços Oferecidos */
+.servicos-section {
+  padding: 4rem 0;
+}
+
+.servicos-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.servico-item {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  max-width: 300px;
+  text-align: center;
+  padding: 2rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.servico-item:hover {
+  transform: translateY(-10px);
+}
+
+.servico-img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+/* Estilos responsivos para telas menores */
+@media (max-width: 768px) {
+  .servicos-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .servico-item {
+    max-width: 90%;
+  }
+}
+
+/* Estilos para a seção Vantagens e Benefícios */
+.vantagens-section {
+  background-color: #fff; /* Cor de fundo para contraste */
+  padding: 4rem 0;
+}
+
+.vantagens-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.vantagem-item {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  max-width: 300px;
+  text-align: center;
+  padding: 2rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.vantagem-item:hover {
+  transform: translateY(-10px);
+}
+
+/* Estilos responsivos para telas menores */
+@media (max-width: 768px) {
+  .vantagens-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .vantagem-item {
+    max-width: 90%;
+  }
+}
+
+/* Estilos para a seção Chamada para Ação */
+.cta-section {
+  background-color: #4CAF50; /* Cor temática para chamar a atenção */
+  color: white;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.cta-form {
+  max-width: 500px;
+  margin: 2rem auto;
+}
+
+.cta-form input,
+.cta-form textarea {
+  width: 100%;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  border-radius: 4px;
+  border: none;
+}
+
+.cta-form button.cta-button {
+  width: 100%;
+  padding: 1rem;
+  margin-top: 1rem;
+  background-color: white;
+  color: #4CAF50;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cta-form button.cta-button:hover {
+  background-color: #45a049;
+  color: white;
+}
+
+/* Estilos responsivos para telas menores */
+@media (max-width: 768px) {
+  .cta-form {
+    width: 90%;
+  }
+}
+
+/* Estilos para o Footer */
+.site-footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.site-footer p {
+  margin: 0.5rem 0;
+}
