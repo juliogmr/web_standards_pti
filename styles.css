@@ -1,16 +1,15 @@
-/* Reset básico para remover margens e padding padrões */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Estilos para o banner principal */
 .hero-banner {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url('nome-da-imagem.png'); /* Atualize com o nome real da imagem */
+  background-image: url('nome-da-imagem.png'); 
   background-size: cover;
   background-position: center;
   height: 80vh;
@@ -19,7 +18,7 @@
 .hero-text {
   text-align: center;
   color: white;
-  background: rgba(0, 0, 0, 0.5); /* Sobreposição escura para melhorar a legibilidade do texto */
+  background: rgba(0, 0, 0, 0.5); 
   padding: 2rem;
 }
 
@@ -32,7 +31,7 @@ button {
   padding: 1rem 2rem;
   font-size: 1rem;
   color: white;
-  background-color: #4CAF50; /* Verde */
+  background-color: #4CAF50; 
   border: none;
   cursor: pointer;
   transition: background-color 0.3s;
@@ -42,16 +41,14 @@ button:hover {
   background-color: #45a049;
 }
 
-/* Estilos para a seção Sobre */
 .sobre-section {
-  background-color: #f8f8f8; /* Cor de fundo suave */
+  background-color: #f8f8f8; 
   padding: 4rem 0;
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  /* padding: 0 2rem; */
   padding-top: 6rem;
 }
 
@@ -76,7 +73,6 @@ h2 {
   margin-bottom: 2rem;
 }
 
-/* Estilos responsivos para telas menores */
 @media (max-width: 768px) {
   .hero-banner {
     height: 60vh;
@@ -97,11 +93,10 @@ h2 {
   }
 
   .sobre-img {
-    margin: 0 auto; /* Centraliza a imagem */
+    margin: 0 auto; 
   }
 }
 
-/* Estilos para a seção Serviços Oferecidos */
 .servicos-section {
   padding: 4rem 0;
 }
@@ -134,7 +129,6 @@ h2 {
   margin-bottom: 1rem;
 }
 
-/* Estilos responsivos para telas menores */
 @media (max-width: 768px) {
   .servicos-grid {
     flex-direction: column;
@@ -146,9 +140,9 @@ h2 {
   }
 }
 
-/* Estilos para a seção Vantagens e Benefícios */
+
 .vantagens-section {
-  background-color: #fff; /* Cor de fundo para contraste */
+  background-color: #fff; 
   padding: 4rem 0;
 }
 
@@ -173,7 +167,6 @@ h2 {
   transform: translateY(-10px);
 }
 
-/* Estilos responsivos para telas menores */
 @media (max-width: 768px) {
   .vantagens-grid {
     flex-direction: column;
@@ -185,9 +178,8 @@ h2 {
   }
 }
 
-/* Estilos para a seção Chamada para Ação */
 .cta-section {
-  background-color: #4CAF50; /* Cor temática para chamar a atenção */
+  background-color: #4CAF50; 
   color: white;
   padding: 4rem 0;
   text-align: center;
@@ -224,14 +216,12 @@ h2 {
   color: white;
 }
 
-/* Estilos responsivos para telas menores */
 @media (max-width: 768px) {
   .cta-form {
     width: 90%;
   }
 }
 
-/* Estilos para o Footer */
 .site-footer {
   background-color: #333;
   color: white;
